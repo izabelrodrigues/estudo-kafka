@@ -33,13 +33,13 @@ Acesse o diretório onde foi extraído os arquivos do Kafka e execute o comando ab
 
 ##### Executar produtores de mensagem:
 
-Abra a classe NewRegistroProducerMain e com o botão direito execute Run As -> Java Application
+Abra a classe NewRegistroProducerSimplesMain e com o botão direito execute Run As -> Java Application
 
 No console você vai poder ver as mensagens sendo enviadas ao tópico CLIENTES_ADD_CLIENT
 
 
 ##### Executar consumidores simples de mensagem:
 
-Abra a classe RegistroConsumerMain e com o botão direito execute Run As -> Java Application
+Abra a classe RegistroConsumerSimplesMain e com o botão direito execute Run As -> Java Application
 
 No console você vai poder ver as mensagens consumidas do tópico CLIENTES_ADD_CLIENT

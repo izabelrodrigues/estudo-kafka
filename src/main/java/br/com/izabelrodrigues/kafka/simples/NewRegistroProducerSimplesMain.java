@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.izabelrodrigues.kafka;
+package br.com.izabelrodrigues.kafka.simples;
 
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
@@ -15,7 +15,7 @@ import org.apache.kafka.common.serialization.StringSerializer;
  * @author Izabel Rodrigues
  *
  */
-public class NewRegistroProducerMain {
+public class NewRegistroProducerSimplesMain {
 
 	/**
 	 * @param args

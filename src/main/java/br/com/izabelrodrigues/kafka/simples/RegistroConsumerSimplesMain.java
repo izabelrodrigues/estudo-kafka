@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.izabelrodrigues.kafka;
+package br.com.izabelrodrigues.kafka.simples;
 
 import java.time.Duration;
 import java.util.Collections;
@@ -17,7 +17,7 @@ import org.apache.kafka.common.serialization.StringDeserializer;
  * @author Izabel Rodrigues
  *
  */
-public class RegistroConsumerMain {
+public class RegistroConsumerSimplesMain {
 
 	/**
 	 * @param args
@@ -43,7 +43,7 @@ public class RegistroConsumerMain {
 		prop.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
 		prop.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 		prop.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
-		prop.setProperty(ConsumerConfig.GROUP_ID_CONFIG, RegistroConsumerMain.class.getSimpleName());
+		prop.setProperty(ConsumerConfig.GROUP_ID_CONFIG, RegistroConsumerSimplesMain.class.getSimpleName());
 		return prop;
 	}
 
