@@ -4,6 +4,7 @@
 package br.com.izabelrodrigues.kafka.simples;
 
 import java.util.Properties;
+import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -57,8 +58,11 @@ public class NewRegistroProducerSimplesMain {
 		value.append(",");
 		value.append(100 * id);
 		
-		StringBuilder key = new StringBuilder("key");
+		StringBuilder key = new StringBuilder("key-");
+		key.append(UUID.randomUUID().toString());
+		key.append("-");
 		key.append(id);
+		
 		
 		return new ProducerRecord<String, String>("CLIENTES_ADD_CLIENT", key.toString(), value.toString());
 	}

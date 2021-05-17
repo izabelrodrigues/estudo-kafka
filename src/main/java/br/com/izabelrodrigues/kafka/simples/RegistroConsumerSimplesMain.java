@@ -44,6 +44,7 @@ public class RegistroConsumerSimplesMain {
 		prop.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 		prop.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
 		prop.setProperty(ConsumerConfig.GROUP_ID_CONFIG, RegistroConsumerSimplesMain.class.getSimpleName());
+		prop.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG,"3");
 		return prop;
 	}
 
